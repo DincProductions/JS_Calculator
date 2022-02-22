@@ -1,0 +1,147 @@
+<DOCTYPEHTML>
+<html>
+<body>
+<h2>JS Calculator</h2>
+//*Css Part*//
+<style>
+
+body {
+background-color:#ff00c1  ;
+}
+.clc {
+background-color: #008CBA;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.ROF {
+background-color:  #ff0000
+;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.clc1 {
+background-color:   #ffffff ;
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.clc2 {
+background-color: #55ff00  ;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.clc3 {
+background-color:  #1d1c0f ;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.clc4 {
+background-color:  #000000 ;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+</style>
+//*Html,Css,Javascript Part*//
+<label style="color:  #000000;" for="Xvalue">X Value</label><br>
+   <input type="number" id="Xvalue" name="Xvalue" value="5"><br>
+<p style="color:   #001fff;" id="demo"></p>
+<br><label style="color:  #000000;" for="Yvalue">Y value</label><br>
+   <input type="number" id="Yvalue" name="Yvalue" value="10"><br>
+<button class="clc" onclick="Degerata1()">+</button>
+<button class="clc4" onclick="DegerataM()">**(square)</button><br>
+<button class="clc1" onclick="Degerata2()">-</button><br>
+<button class="clc2" onclick="Degerata3()">*</button><br>
+<button class="clc3" onclick="Degerata4()">/</button><br>
+
+<script>
+//*Javascript Part*//
+function DegerataM() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=document.getElementById("Yvalue").value;
+z= x**y ;
+//*There are a lot of functions so we don't doing anything if you don't know*//
+
+ document.getElementById("demo").innerHTML = "The value of z is "  + z + "." ;
+}
+function Degerata1() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=document.getElementById("Yvalue").value;
+z= Number(x) + Number(y);
+
+
+ document.getElementById("demo").innerHTML = "The value of z is "  + z + "." ;
+}
+function Degerata2() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=document.getElementById("Yvalue").value;
+z= x - y;
+
+
+ document.getElementById("demo").innerHTML = "The value of z is "  + z + "." ;
+}
+function Degerata3() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=document.getElementById("Yvalue").value;
+z= x * y;
+
+
+ document.getElementById("demo").innerHTML = "The value of z is "  + z + "." ;
+}
+function Degerata4() {
+let x,y;
+x=document.getElementById("Xvalue").value;
+y=document.getElementById("Yvalue").value;
+z= x / y;
+
+
+ document.getElementById("demo").innerHTML = "The value of z is "  + z + "." ;
+}
+//*This project made by Dinç Erdem Bayraktar*//
+</script>
+</body>
+</html>
